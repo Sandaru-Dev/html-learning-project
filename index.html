@@ -17,6 +17,9 @@
 
 <body>
 
+    <!-- linking -->
+    <a href="/blog.html">Blog Page</a>
+
     <!--Heading-->
     <h1>Heading one</h1>
     <h2>Heading two</h2>
@@ -24,14 +27,16 @@
     <h4>Heading four</h4>
     <h5>Heading five</h5>
     <h6>Heading six</h6>
+    
 
     <!-- paragraph -->
 <p>
     Lorem ipsum dolor, sit amet <em> consectetur adipisicing elit. Architecto explicabo nisi enim alias non</em> esse inventore et hic necessitatibus! Animi amet sunt fugiat voluptatem, eveniet labore minus deserunt ipsum commodi placeat unde ratione quisquam, nemo distinctio? <strong> Omnis odit neque excepturi amet perspiciatis atque fugiat repellendus</strong> debitis maiores asperiores? Illum at recusandae nesciunt <i> voluptates </i> provident explicabo assumenda sed consequatur est in? Laborum molestiae iusto deserunt laboriosam! Voluptate nemo quaerat vitae porro quas repudiandae, perspiciatis consequatur ad, sint fugit beatae. <b> Et accusamus, minima quam eos cum, totam aut aspernatur assumenda id placeat perferendis tempora fugit.</b> Iure sapiente animi perspiciatis <u> deleniti quis accusantium. </u>
-
+    <br><br><br>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate minima placeat laborum accusantium repudiandae! Iusto <a href="https://www.google.lk" target="blank" >click hear to visit</a> asperiores voluptate eveniet. Magni mollitia eos hic repellat, assumenda tempore? Nemo saepe praesentium vel.
 </p>
 
+<hr>
 <!-- list -->
     <!-- unorded list -->
 
@@ -40,12 +45,250 @@
         <li>list item 1</li>
         <li>list item 2</li>
         <li>list item 3</li>
-        <li>list item 4</li>
+        <li>list item 4
+            <ul>
+                <li>sub 1</li>
+                <li>sub 2</li>
+                <li>sub 3</li>
+            </ul>
+
+        </li>
         <li>list item 5</li>
         <li>list item 6</li>
-
-
     </ul>
+
+<br>
+<hr>
+    <!-- orded list -->
+
+    <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+
+    </ol>
+
+    <hr>
+
+    <!-- table -->
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>age/th>
+            </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>saman</td>
+            <td>saman@gmail.com</td>
+            <td>20</td>
+
+        </tr>
+
+        <tr>
+            <td>ratta</td>
+            <td>ratta@yahoo.com</td>
+            <td>33</td>
+        </tr>
+
+        <tr>
+            <td>maniya</td>
+            <td>maniya@yahoo.com</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>paone</td>
+            <td>pa@yahoo.com</td>
+            <td>23</td>
+        </tr>
+
+
+    </tbody>
+
+    </table>
+
+    <br><br>
+
+
+<!-- form -->
+
+<form action="./php/process.php" method="POST">
+
+    <div>
+
+        <label>First Name :</label>
+        <input type="text" name="first name" required>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>Last Name :</label>
+        <input type="text" name="last name" required>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>email :</label>
+        <input type="email" name="email" placeholder="type your email" required>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>message :</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>Gender :</label>
+        <select name="gender" id="gender">
+
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+    </div>
+
+
+    <br>
+
+    <div>
+
+        <label>Age :</label>
+        <input type="number" name="age" required>
+
+    </div>
+
+
+    <br>
+
+    <div>
+
+        <label>Birthday :</label>
+        <input type="date" name="Birthday" required>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>Profile Picture :</label>
+        <input type="file" name="imgfile"required>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>Favourite food :</label>
+        <input type="checkbox" name="apple" value="apple"><label>apple</label>
+        <input type="checkbox" name="pizza" value="pizza"><label>pizza</label>
+        <input type="checkbox" name="chocalote" value="chocalote"><label>chocalote</label>
+
+    </div>
+
+
+    <div>
+
+        <label>User Type :</label>
+        <input type="radio" id="static" name="usertype" value="Static"><label>Static</label>
+        <input type="radio" id="dynamic" name="usertype" value="Dynamic"><label>Dynamic</label>
+        
+    </div>
+
+    <div>
+
+        <input type="submit" value="Submit" name="Submit">
+        <!-- <button type="submit">Submit</button> -->
+
+    </div>
+
+</form>
+
+
+
+<hr>
+
+<br>
+
+    <button>Click Me</button>
+
+    <br>
+
+    <hr>
+
+
+    <!-- images -->
+
+    <a href="/images/html5-640x960.png" target="_blank">
+    
+        <img src="/images/html5-640x960.png" alt="This is an image" height="260" width="200">
+    
+    </a>
+
+
+    <!-- Quatations -->
+
+    <blockquote cite="https://google.lk">
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime eius molestias neque hic voluptatum, perspiciatis vel nulla optio magni velit deleniti magnam. Quibusdam inventore voluptatem quam quisquam consequuntur. Magnam reprehenderit quisquam necessitatibus eius quos ex magni voluptate totam, praesentium, laborum iste perspiciatis obcaecati quasi ullam enim corrupti pariatur iure!
+
+    </blockquote>
+
+    <hr>
+
+
+    <!-- abbreviation -->
+
+    <p>
+
+        The <abbr title="wordl wide web">www</abbr> is amazing things that discoverd ever
+
+
+    </p>
+
+    <section>
+
+        <p>HTML Crash by <cite> sandaru</cite></p>
+
+        
+    </section>
+
+    <hr>
+
+    <footer>
+
+        <p>Copyright &copy; 2020</p>
+
+    </footer>
+
+
+    
+
+
 
 </body>
 
